@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor-login" fx:id="login_anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="350.0" styleClass="anchor-login" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.yonetimSayfaGirisController">
+   <children>
+      <Label layoutX="54.0" layoutY="23.0" text="Giriş Yapın" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="281.0" text="Hesabınız yok mu?" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="308.0" text=" Kayıt olun" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="93.0" text="Kullanıcı Adı:" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="138.0" text="Şifre:" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_giris" layoutX="137.0" layoutY="89.0" promptText="Kullanıcı adını giriniz" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txt_sifre" layoutX="137.0" layoutY="134.0" promptText="Şifre giriniz" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font></TextField>
+      <Button fx:id="btn_giris" layoutX="84.0" layoutY="182.0" mnemonicParsing="false" onAction="#btn_giris_Click" styleClass="buton-tum" stylesheets="@application.css" text="Giriş Yap" textAlignment="CENTER">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="27.0" layoutY="359.0" text="Kullanıcı Adı:" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="403.0" text="Şifre:" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_kayit" layoutX="143.0" layoutY="355.0" promptText="Kullanıcı adını giriniz" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txt_kayitsifre" layoutX="143.0" layoutY="399.0" promptText="Şifre giriniz" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font></TextField>
+      <Button fx:id="btn_kayit" layoutX="101.0" layoutY="447.0" mnemonicParsing="false" onAction="#btn_kayit_Click" styleClass="buton-tum" stylesheets="@application.css" text="Kayıt Ol" textAlignment="CENTER">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <AnchorPane layoutY="262.0" prefHeight="2.0" prefWidth="350.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
